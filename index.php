@@ -15,13 +15,15 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__logo">
-			<span>Tricotix</span>
+		<div class="box">
+			<div class="header__logo">
+				<span>Tricotix</span>
+			</div>
+			<nav class="header__search">
+				<input type="text" placeholder="Cerca..">
+				<i class="fas fa-search"></i>
+			</nav>
 		</div>
-		<nav class="header__search">
-			<input type="text" placeholder="Cerca..">
-			<i class="fas fa-search"></i>
-		</nav>
 	</header>
 </body>
 </html>
