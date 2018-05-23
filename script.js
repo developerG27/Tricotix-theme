@@ -9,6 +9,7 @@
 jQuery(document).ready(function($) {
   // You can use $() inside of this function
   $("#search-icon").click(function(){
-    alert("The paragraph was clicked.");
+    $(".header__search input").toggleClass('input--show');
   });
+  
 });

@@ -61,7 +61,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
  /* Universal */
 body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif;}
-.box{width: 1400px; max-width: 1400px;  min-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center;}
+.box{width: 1400px; max-width: 1400px;  min-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
 
 /* Header */
 .header{width:100%; height:auto; background:#1A1A1A; color:#fff;}
@@ -82,9 +82,12 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
 }
 /* Header Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
-  .box{min-width: 410px; width: 410px;}
-  .header__search input{display: none;}
-  .input--show{display: block;}
+  .box{min-width: 410px; width: 410px; position: relative;}
+  .header__search input{display: none; width: 80%;}
+  .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
+}
+.visita{
+  display: block;
 }
 /* Header Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
@@ -93,7 +96,7 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
 }
 /* Header Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
-  .box{min-width: 315px; width: 315px;}
+  .box{min-width: 315px; width: 315px; }
   .header__logo span{font-size: 2.6em;}
   .header__search input{display: none;}
   .header__search i{font-size: 1.8em;}
