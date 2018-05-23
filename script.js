@@ -1,7 +1,6 @@
-let search = document.querySelector("#search-icon");
-let input = document.querySelector("#input");
+// var search = document.querySelector("#search-icon");
+// var input = document.querySelector("#input");
 
-search.addEventListener('click',function(e){
-  input.classList.toggle('.input--show')
-  return e;
-});
+// search.addEventListener('click',function(){
+//   input.classList.toggle('input--show');
+// })
