@@ -4,3 +4,11 @@
 // search.addEventListener('click',function(){
 //   input.classList.toggle('input--show');
 // })
+
+
+jQuery(document).ready(function($) {
+  // You can use $() inside of this function
+  $("#search-icon").click(function(){
+    alert("The paragraph was clicked.");
+  });
+});
