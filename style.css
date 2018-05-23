@@ -93,6 +93,7 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
 @media screen and (max-width: 424px) and (min-width: 375px){
   .box{min-width: 365px; width: 365px;}
   .header__search input{display: none;}
+  .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
 /* Header Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
@@ -100,5 +101,6 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
   .header__logo span{font-size: 2.6em;}
   .header__search input{display: none;}
   .header__search i{font-size: 1.8em;}
+  .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
 
