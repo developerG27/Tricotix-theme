@@ -60,7 +60,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
  /* Universal */
-body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif;}
+body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif; background: #1a1a1a;}
 .box{width: 1400px; max-width: 1400px;  min-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
 
 /* Header */
@@ -104,3 +104,8 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
   .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
 
+
+/* Nav */
+.nav{width: 300px; height: calc(100vh - 58px); background: #1A1A1A; color: #EFEFEF;}
+.nav ul{padding: 0px; margin: 0px; }
+.nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px; }

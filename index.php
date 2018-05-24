@@ -21,12 +21,24 @@
 			<div class="header__logo">
 				<span>Tricotix</span>
 			</div>
-			<nav class="header__search">
+			<div class="header__search">
 				<input type="text" placeholder="Cerca.." id="input">
 				<i class="fas fa-search" id="search-icon"></i>
-			</nav>
+			</div>
 		</div>
 	</header>
+
+	<div class="box">
+		<nav class="nav">
+			<ul>
+				<li class="nav__item">Primo</li>
+				<li class="nav__item">Secondo</li>
+				<li class="nav__item">Terzo</li>
+				<li class="nav__item">Quarto</li>
+			</ul>
+		</nav>
+	</div>
+
 </body>
 
 </html>
