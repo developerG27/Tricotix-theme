@@ -37,6 +37,47 @@
 				<li class="nav__item">Quarto</li>
 			</ul>
 		</nav>
+
+		<main class="main">
+			<section class="main__box">
+
+				<article class="main__article">
+					<img src="https://source.unsplash.com/random/280x380">
+				</article>
+
+				<article class="main__article">
+					<img src="https://source.unsplash.com/random/280x380">
+				</article>
+
+				<article class="main__article">
+					<img src="https://source.unsplash.com/random/280x380">
+				</article>
+
+				<article class="main__article">
+					<img src="https://source.unsplash.com/random/280x380">
+				</article>
+
+				<article class="main__article">
+					<img src="https://source.unsplash.com/random/280x380">
+				</article>
+
+				<article class="main__article">
+					<img src="https://source.unsplash.com/random/280x380">
+				</article>
+
+				<article class="main__article">
+					<img src="https://source.unsplash.com/random/280x380">
+				</article>
+
+				<article class="main__article">
+					<img src="https://source.unsplash.com/random/280x380">
+				</article>
+
+				<article class="main__article">
+					<img src="https://source.unsplash.com/random/280x380">
+				</article>
+			</section>
+		</main>
 	</div>
 
 </body>

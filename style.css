@@ -61,10 +61,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
  /* Universal */
 body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif; background: #1a1a1a;}
-.box{width: 1400px; max-width: 1400px;  min-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+.box{width: 1400px; max-width: 1400px;  min-width: 1200px; margin: auto; display: flex; justify-content: space-between;}
 
 /* Header */
-.header{width:100%; height:auto; background:#1A1A1A; color:#fff;}
+.header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center;}
 .header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6;}
 .header__search{display: flex; align-items: center;}
 .header__search input{background: #c4c4c4; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
@@ -106,6 +106,10 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
 
 
 /* Nav */
-.nav{width: 300px; height: calc(100vh - 58px); background: #1A1A1A; color: #EFEFEF;}
+.nav{width: 250px; height: calc(100vh - 58px); background: #1A1A1A; color: #EFEFEF;}
 .nav ul{padding: 0px; margin: 0px; }
-.nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px; }
+.nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px;}
+
+/* Article */
+.main{ width: 100%; background: #EFEFEF; }
+.main__box{max-width: 1042px; margin: 25px auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
