@@ -68,7 +68,7 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
 .header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center;}
 .header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6;}
 .header__search{display: flex; align-items: center;}
-.header__search input{background: #c4c4c4; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
+.header__search input{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
 
 .header__search i{font-size: 2em; margin-left: 10px; color: #E8DCB8;}
 
@@ -93,14 +93,14 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
 /* Header Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
   .box{min-width: 365px; width: 365px;}
-  .header__search input{display: none; width: 85%; font-size: 1.2em; padding: 0px 5px;}
+  .header__search input{display: none; width: 85%; font-size: 1em; padding: 0px 2px;}
   .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
 /* Header Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
   .box{min-width: 315px; width: 315px; }
-  .header__logo span{font-size: 2.6em;}
-  .header__search input{display: none; width: 80%;}
+  .header__logo span{font-size: 3em;}
+  .header__search input{display: none; width: 85%; font-size: 1em; padding: px;}
   .header__search i{font-size: 1.8em;}
   .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
