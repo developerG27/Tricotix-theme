@@ -127,7 +127,7 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
 
 
 /* Article */
-.main{ width: 100%; background: #EFEFEF; }
+.main{ width: 100%; background: #EFEFEF; position: relative;}
 .main__box{max-width: 1042px; margin: 25px auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .main__article{position: relative; overflow: hidden; margin-bottom: 40px;}
 .main__article--gradient{position: absolute; width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); bottom:0; display: flex; justify-content: center; align-items: flex-end;}
@@ -164,6 +164,25 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
   .main__article{width: 100%; margin-bottom: 0px;}
   .main__article img{ width: 100%; height: 195px; object-fit: cover; background-position: center center;}
   .main__article--gradient__p{font-size: 18px;}
+}
+
+/* Navigation */
+.main__navigation{display: none; width: 100%;}
+.main__navigation .nav__item{list-style: none; background: rgba(0,0,0,.8); margin-bottom: 5px; padding: 4px 10px; width: 90px; text-align: right; border-radius:5px; color:#FFF1C6 }
+/* Navigation Smartphone L */
+@media screen and (max-width: 767px) and (min-width: 425px){
+  .main__navigation{display: flex;}
+  .main__navigation ul{position: fixed; bottom: 20px; right: 10px; z-index: 1000;}
+}
+/* Navigation Smartphone M */
+@media screen and (max-width: 424px) and (min-width: 375px){
+  .main__navigation{display: flex;}
+  .main__navigation ul{position: fixed; bottom: 20px; right: 10px; z-index: 1000;}
+}
+/* Navigation Smartphone S */
+@media screen and (max-width: 374px) and (min-width: 320px){
+  .main__navigation{display: flex;}
+  .main__navigation ul{position: fixed; bottom: 20px; right: 10px; z-index: 1000;}
 }
 
 /* Pagination */
