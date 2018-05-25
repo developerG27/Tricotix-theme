@@ -106,6 +106,10 @@
 
 				
 			</section>
+
+			<section class="main__pagination">
+				<span>Mostra altro</span>
+			</section>
 		</main>
 	</div>
 
