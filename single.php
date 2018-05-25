@@ -64,6 +64,7 @@
 				<?php
 				if (have_posts()) :
 							while (have_posts()) :
+								the_category();
 								the_post();
 								the_content();
 							endwhile;
