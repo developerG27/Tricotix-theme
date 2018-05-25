@@ -42,40 +42,69 @@
 			<section class="main__box">
 
 				<article class="main__article">
-					<img src="https://source.unsplash.com/random/280x380">
+					<img src="https://source.unsplash.com/random/290x400">
+					<div class="main__article--gradient">
+						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
+					</div>
 				</article>
 
 				<article class="main__article">
-					<img src="https://source.unsplash.com/random/280x380">
+					<img src="https://source.unsplash.com/random/290x400">
+					<div class="main__article--gradient">
+						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
+					</div>
 				</article>
 
 				<article class="main__article">
-					<img src="https://source.unsplash.com/random/280x380">
+					<img src="https://source.unsplash.com/random/290x400">
+					<div class="main__article--gradient">
+						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
+					</div>
 				</article>
 
 				<article class="main__article">
-					<img src="https://source.unsplash.com/random/280x380">
+					<img src="https://source.unsplash.com/random/290x400">
+					<div class="main__article--gradient">
+						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
+					</div>
 				</article>
 
 				<article class="main__article">
-					<img src="https://source.unsplash.com/random/280x380">
+					<img src="https://source.unsplash.com/random/290x400">
+					<div class="main__article--gradient">
+						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
+					</div>
 				</article>
 
 				<article class="main__article">
-					<img src="https://source.unsplash.com/random/280x380">
+					<img src="https://source.unsplash.com/random/290x400">
+					<div class="main__article--gradient">
+						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
+					</div>
 				</article>
 
 				<article class="main__article">
-					<img src="https://source.unsplash.com/random/280x380">
+					<img src="https://source.unsplash.com/random/290x400">
+					<div class="main__article--gradient">
+						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
+					</div>
 				</article>
 
 				<article class="main__article">
-					<img src="https://source.unsplash.com/random/280x380">
+					<img src="https://source.unsplash.com/random/290x400">
+					<div class="main__article--gradient">
+						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
+					</div>
 				</article>
 
 				<article class="main__article">
-					<img src="https://source.unsplash.com/random/280x380">
+					<img src="https://source.unsplash.com/random/290x400">
+					<div class="main__article--gradient">
+						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
+					</div>
 				</article>
+
+				
 			</section>
 		</main>
 	</div>
