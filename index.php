@@ -20,7 +20,7 @@
 	<header class="header">
 		<div class="box">
 			<div class="header__logo">
-				<span>Tricotix</span>
+				<a href="<?php bloginfo('url'); ?>" class="no-margin"><span>Tricotix</span></a>
 			</div>
 			<div class="header__search">
 				<input type="text" placeholder="Cerca.." id="input">
@@ -31,12 +31,16 @@
 
 	<div class="box">
 		<nav class="nav">
-			<ul>
-				<a href="single.html"><li class="nav__item">Primo</li></a>
-				<li class="nav__item">Secondo</li>
-				<li class="nav__item">Terzo</li>
-				<li class="nav__item">Quarto</li>
-			</ul>
+		<?php
+            wp_nav_menu(array(  
+            'container' => 'ul',
+            'container_class' => 'menu',
+            'menu' => 'li',
+            'menu_class' => 'item',
+            'link_before' => '<li>',
+            'link_after' => '</li>'
+            ));
+          ?>
 		</nav>
 
 		<main class="main">

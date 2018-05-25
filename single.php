@@ -19,7 +19,7 @@
 	<header class="header">
 		<div class="box">
 			<div class="header__logo">
-				<span>Tricotix</span>
+				<a href="<?php bloginfo('url'); ?>" class="no-margin"><span>Tricotix</span></a>
 			</div>
 			<div class="header__search">
 				<input type="text" placeholder="Cerca.." id="input">
