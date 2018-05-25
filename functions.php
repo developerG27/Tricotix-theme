@@ -11,3 +11,6 @@ wp_enqueue_script('jquery');
 //il nome, src, array(), la versione, true= nel footer, false= nel header
 wp_enqueue_script('script',get_template_directory_uri().'/script.js',array(),rand(),false);
 
+//Aggiungo le post thumbnails
+add_theme_support('post-thumbnails'); 
+

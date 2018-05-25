@@ -60,9 +60,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
  /* Universal */
-body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif; background: #1a1a1a;}
+body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif; background: #1a1a1a;}
 .box{width: 1400px; max-width: 1400px;  min-width: 1200px; margin: auto; display: flex; justify-content: space-between;}
 .hide{display: none;}
+.no-margin{margin: 0px;}
 
 /* Header */
 .header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center;}
@@ -131,17 +132,18 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
 .main{ width: 100%; background: #EFEFEF; position: relative;}
 .main__box{max-width: 1042px; margin: 25px auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .main__article{position: relative; overflow: hidden; margin-bottom: 40px;}
-.main__article--gradient{position: absolute; width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); bottom:0; display: flex; justify-content: center; align-items: flex-end;}
+.main__article .attachment-post-thumbnail{ width: 290px; height: 400px; object-fit: cover; background-position: center center;}
+.main__article--gradient{position: absolute; width: 290px; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); bottom:0; display: flex; justify-content: center; align-items: flex-end;}
 .main__article--gradient__p{color: #fff; font-size: 21px; padding: 0px 10px;}
 /* Article Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
   .main__box{width: 750px;}
-  .main__article img{ width: 230px; height: 330px;}
+  .main__article .attachment-post-thumbnail{ width: 230px; height: 330px;}
 }
 /* Article Tablet */
 @media screen and (max-width: 1023px) and (min-width: 768px){
   .main__box{width: 520px;}
-  .main__article img{ width: 240px; height: 330px;}
+  .main__article .attachment-post-thumbnail{ width: 240px; height: 330px;}
 }
 /* Article Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
@@ -149,7 +151,7 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
   .nav{display: none;}
   .main__box{width: 100%; margin: 0px;}
   .main__article{width: 100%; margin-bottom: 0px;}
-  .main__article img{ width: 100%; height: 250px; object-fit: cover; background-position: center center;}
+  .main__article .attachment-post-thumbnail{ width: 100%; height: 250px; object-fit: cover; background-position: center center;}
 }
 /* Article Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
@@ -157,7 +159,7 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
   .nav{display: none;}
   .main__box{width: 100%; margin: 0px;}
   .main__article{width: 100%; margin-bottom: 0px;}
-  .main__article img{ width: 100%; height: 220px; object-fit: cover; background-position: center center;}
+  .main__article .attachment-post-thumbnail{ width: 100%; height: 220px; object-fit: cover; background-position: center center;}
   .main__article--gradient__p{font-size: 18px;}
 }
 /* Article Smartphone S */
@@ -166,7 +168,7 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
   .nav{display: none;}
   .main__box{width: 100%; margin: 0px;}
   .main__article{width: 100%; margin-bottom: 0px;}
-  .main__article img{ width: 100%; height: 195px; object-fit: cover; background-position: center center;}
+  .main__article .attachment-post-thumbnail{ width: 100%; height: 195px; object-fit: cover; background-position: center center;}
   .main__article--gradient__p{font-size: 18px;}
 }
 

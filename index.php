@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes();?>>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Font Megrim e Roboto -->
@@ -13,9 +13,10 @@
 	<?php wp_enqueue_script('NomeScript', '/script.js', false, '2.0', false );?>
 	
 	<title>Tricotix</title>
+	<?php wp_head(); ?>
 	
 </head>
-<body>
+<body class="tricotix">
 	<header class="header">
 		<div class="box">
 			<div class="header__logo">
@@ -31,7 +32,7 @@
 	<div class="box">
 		<nav class="nav">
 			<ul>
-				<li class="nav__item">Primo</li>
+				<a href="single.html"><li class="nav__item">Primo</li></a>
 				<li class="nav__item">Secondo</li>
 				<li class="nav__item">Terzo</li>
 				<li class="nav__item">Quarto</li>
@@ -40,69 +41,25 @@
 
 		<main class="main">
 			<section class="main__box">
+				
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <a class="no-margin" href="<?php the_permalink(); ?>">
+        <article <?php post_class('main__article'); ?>>
+        <?php if( has_post_thumbnail()) { the_post_thumbnail();} ?>
+          <div class="main__article--gradient">
+            <p class="main__article--gradient__p"><?php the_title(); ?></p>
+          </div>
+        </article>
+        </a>
 
-				<article class="main__article">
-					<img src="https://source.unsplash.com/random/290x400">
-					<div class="main__article--gradient">
-						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
-					</div>
-				</article>
+        <?php endwhile; else: ?>
+        <div class="articolo">
+          <p>Non ho trovato nulla</p>
+        </div>
 
-				<article class="main__article">
-					<img src="https://source.unsplash.com/random/290x400">
-					<div class="main__article--gradient">
-						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
-					</div>
-				</article>
+        <?php endif; ?>
 
-				<article class="main__article">
-					<img src="https://source.unsplash.com/random/290x400">
-					<div class="main__article--gradient">
-						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
-					</div>
-				</article>
-
-				<article class="main__article">
-					<img src="https://source.unsplash.com/random/290x400">
-					<div class="main__article--gradient">
-						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
-					</div>
-				</article>
-
-				<article class="main__article">
-					<img src="https://source.unsplash.com/random/290x400">
-					<div class="main__article--gradient">
-						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
-					</div>
-				</article>
-
-				<article class="main__article">
-					<img src="https://source.unsplash.com/random/290x400">
-					<div class="main__article--gradient">
-						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
-					</div>
-				</article>
-
-				<article class="main__article">
-					<img src="https://source.unsplash.com/random/290x400">
-					<div class="main__article--gradient">
-						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
-					</div>
-				</article>
-
-				<article class="main__article">
-					<img src="https://source.unsplash.com/random/290x400">
-					<div class="main__article--gradient">
-						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
-					</div>
-				</article>
-
-				<article class="main__article">
-					<img src="https://source.unsplash.com/random/290x400">
-					<div class="main__article--gradient">
-						<p class="main__article--gradient__p">Lorem Ipsum dolor smit and loret white</p>
-					</div>
-				</article>
+				
 
 				
 			</section>
@@ -121,7 +78,6 @@
 			</section>
 		</main>
 	</div>
-
 </body>
 
 </html>
