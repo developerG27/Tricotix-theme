@@ -84,16 +84,16 @@ body,html{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-f
 /* Header Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
   .box{min-width: 410px; width: 410px; position: relative;}
-  .header__search input{display: none; width: 60%;}
+  .header__search input{display: none; width: 85%; font-size: 1.2em; padding: 0px 5px;}
   .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
 .visita{
   display: block;
-}
+} 
 /* Header Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
   .box{min-width: 365px; width: 365px;}
-  .header__search input{display: none; width: 80%;}
+  .header__search input{display: none; width: 85%; font-size: 1.2em; padding: 0px 5px;}
   .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
 /* Header Smartphone S */
