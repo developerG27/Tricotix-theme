@@ -10,6 +10,10 @@ jQuery(document).ready(function($) {
   // You can use $() inside of this function
   $("#search-icon").click(function(){
     $(".header__search input").toggleClass('input--show');
+    $(".main__navigation ul").toggleClass('hide');
+
   });
+
+  
   
 });
