@@ -132,13 +132,13 @@ a, a:active a:visited{color: #fff; text-decoration: none;}
 
 /* Article */
 .main{ width: 100%; background: #EFEFEF; position: relative;}
+.main__box{ display: flex; flex-direction: row; flex-wrap: wrap; display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; justify-content: space-between;}
 .main__box.content{max-width: 1042px; margin: 0px auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .main__content{max-width: 800px; margin: 0 auto;}
-.main__box__image{position: relative;}
-img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%; height: 400px; object-fit: cover; object-position:100% 10%;}
-.main__box__title{ position: absolute; color: #fff; bottom: 20px; width:100%; display: flex; justify-content: center; font-size: 2em;}
-.main__box__tile p{text-align: center; display: block;  } 
-.main__article{position: relative; overflow: hidden; margin-bottom: 40px;}
+.main__article{position: relative; width: 290px; display: flex; overflow: hidden; margin-bottom: 40px;}
 .main__article .attachment-post-thumbnail{ width: 290px; height: 400px; object-fit: cover; background-position: center center; position: relative;}
 .main__article--gradient{position: absolute;  width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); bottom:0; display: flex; justify-content: center; align-items: flex-end;}
 .main__article--gradient__p{color: #fff; font-size: 21px; padding: 0px 10px;}
@@ -217,3 +217,11 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
   .main__pagination{margin: 10px 0px;}
   .main__pagination span{padding: 10px 15px; font-size: 1em; border-radius: 5px;}
 }
+
+
+/* Single Page */
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%; height: 400px; object-fit: cover; object-position:100% 10%;}
+.main__box__image{position: relative;}
+
+.main__box__title{ position: absolute; color: #fff; bottom: 20px; width:100%; display: flex; justify-content: center; font-size: 2em;}
+.main__box__title p{text-align: center; display: block;  } 
