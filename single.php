@@ -51,7 +51,8 @@
 
 		<main class="main">
 			<section class="main__box content">
-				<div class="main__box__image">
+				<div class="main__box__image single">
+					<div class="main__box__imge--gradient"></div>
 					<?php the_post_thumbnail(); ?>
 					<div class="main__box__title">
 						<p><?php the_title();?></p>
