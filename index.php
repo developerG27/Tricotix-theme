@@ -13,7 +13,6 @@
 	<?php wp_enqueue_script('NomeScript', '/script.js', false, '2.0', false );?>
 	
 	<title>Tricotix</title>
-	<?php wp_head(); ?>
 	
 </head>
 <body class="tricotix">
@@ -39,15 +38,15 @@
 			</ul> -->
 
 			<?php
-            wp_nav_menu(array(  
-            'container' => 'ul',
-            'container_class' => 'menu',
-            'menu' => 'li',
-            'menu_class' => 'item',
-            'link_before' => '<li class="nav__item">',
-            'link_after' => '</li>'
-            ));
-          ?>
+      wp_nav_menu(array(  
+        'container' => 'ul',
+        'container_class' => 'menu',
+        'menu' => 'li',
+        'menu_class' => 'item',
+        'link_before' => '<li class="nav__item">',
+        'link_after' => '</li>'
+        ));
+      ?>
 		</nav>
 
 		<main class="main">

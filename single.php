@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes();?>>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Font Megrim e Roboto -->
@@ -30,17 +30,48 @@
 
 	<div class="box">
 		<nav class="nav">
-			<ul>
-				<li class="nav__item">Primo</li>
+			<!-- <ul>
+				<a href="single.html"><li class="nav__item">Primo</li></a>
 				<li class="nav__item">Secondo</li>
 				<li class="nav__item">Terzo</li>
 				<li class="nav__item">Quarto</li>
-			</ul>
+			</ul> -->
+
+			<?php
+      wp_nav_menu(array(  
+        'container' => 'ul',
+        'container_class' => 'menu',
+        'menu' => 'li',
+        'menu_class' => 'item',
+        'link_before' => '<li class="nav__item">',
+        'link_after' => '</li>'
+        ));
+      ?>
 		</nav>
 
 		<main class="main">
-			<section class="main__box">
+			<section class="main__box content">
+				<div class="main__box__image">
+					<?php the_post_thumbnail(); ?>
+					<div class="main__box__title">
+						<p><?php the_title();?></p>
+					</div>
+				</div>
+				
 			
+				<div class="main__content">
+				<?php
+				if (have_posts()) :
+							while (have_posts()) :
+								the_post();
+								the_content();
+							endwhile;
+						endif;
+					?>
+				</div>
+				
+				
+				
 			</section>
 
 			<section class="main__navigation">
@@ -51,9 +82,9 @@
 					<li class="nav__item">Quarto</li>
 				</ul>
 			</section>
+
 		</main>
 	</div>
-
 </body>
 
 </html>
