@@ -13,7 +13,7 @@
 	<?php wp_enqueue_script('NomeScript', '/script.js', false, '2.0', false );?>
 	
 	<title>Tricotix</title>
-	
+	<?php wp_head(); ?>
 </head>
 <body class="tricotix">
 	<header class="header">

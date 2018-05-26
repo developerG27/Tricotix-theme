@@ -68,7 +68,7 @@ body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;fo
 body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 
 /* Header */
-.header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center;}
+.header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200;}
 .header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6;}
 .header__search{display: flex; align-items: center;}
 .header__search input{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
@@ -110,7 +110,7 @@ body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 
 
 /* Nav */
-.nav{width: 250px; height: calc(100vh - 58px); background: #1A1A1A; color: #EFEFEF;}
+.nav{width: 250px; height: calc(100vh - 58px); background: #1A1A1A; color: #EFEFEF; position: sticky; top: 56px; z-index: 199;}
 .nav ul{padding: 0px; margin: 0px; }
 .nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px;}
 
@@ -219,12 +219,13 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
 
 /* Single Page */
 .single img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%; height: 400px; object-fit: cover; object-position:100% 10%;}
+.main{background: #fafdff;}
 .main__box__image.single{position: relative; overflow: hidden; border-radius: 10px 10px 0px 0px;}
 .main__box__imge--gradient{width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); position: absolute;}
 .main__box__title{ position: absolute; color: #fff; bottom: 20px; width:100%; display: flex; justify-content: center; font-size: 2em;}
 .main__box__title p{text-align: center; display: block;}    
-.main__box.content{background: #fff; margin: 50px auto; border-radius: 10px;}
-.main__content{padding: 40px 0px; max-width: 658px; text-align: justify;}
+.main__box.content{background: #fff; margin: 50px auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,.1);}
+.main__content{max-width: 850px; text-align: justify;}
 .main__content p{font-size: 20px; font-weight: 200; }
 
 /* Categoria */
@@ -233,4 +234,3 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
 .post-categories li a{  padding: 15px 25px; background: #A4A4A4; color: #111; font-size: 1.3em; border-radius: 5px; text-transform:uppercase;}
 
 /* Instagram feed */
-div.Embed{margin: auto;}
