@@ -12,7 +12,17 @@
 
 	<?php wp_enqueue_script('NomeScript', '/script.js', false, '2.0', false );?>
 	
-	<title>Tricotix</title>
+	<title>
+		<?php 
+      if(is_home() ){
+        echo get_bloginfo('');
+      } else if(is_single()){
+        echo the_title();
+      } else{
+        echo get_bloginfo('');
+      }
+    ?>
+	</title>
 	<?php wp_head(); ?>
 </head>
 <body class="tricotix">
