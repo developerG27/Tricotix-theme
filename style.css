@@ -65,7 +65,7 @@ body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;fo
 .hide{display: none;}
 .no-margin{margin: 0px;}
 .menu-item{list-style: none;}
-a, a:active a:visited{color: #fff; text-decoration: none;}
+body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 
 /* Header */
 .header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center;}
@@ -223,11 +223,14 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
 .main__box__imge--gradient{width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); position: absolute;}
 .main__box__title{ position: absolute; color: #fff; bottom: 20px; width:100%; display: flex; justify-content: center; font-size: 2em;}
 .main__box__title p{text-align: center; display: block;}    
-.main__box.content{background: #D3D3D3; margin: 50px auto; border-radius: 10px; box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);}
-.main__content{padding: 40px 0px;}
+.main__box.content{background: #fff; margin: 50px auto; border-radius: 10px;}
+.main__content{padding: 40px 0px; max-width: 658px; text-align: justify;}
 .main__content p{font-size: 20px; font-weight: 200; }
 
 /* Categoria */
 .post-categories{margin: 40px 0px; padding: 0px; }
 .post-categories li{list-style: none; }
 .post-categories li a{  padding: 15px 25px; background: #A4A4A4; color: #111; font-size: 1.3em; border-radius: 5px; text-transform:uppercase;}
+
+/* Instagram feed */
+div.Embed{margin: auto;}
