@@ -32,8 +32,12 @@
 				<a href="<?php bloginfo('url'); ?>" class="no-margin"><span>Tricotix</span></a>
 			</div>
 			<div class="header__search">
-				<input type="text" placeholder="Cerca.." id="input">
-				<i class="fas fa-search" id="search-icon"></i>
+			<?php
+    				get_search_form();
+            
+    ?>
+				<!-- <input type="text" placeholder="Cerca.." id="input">
+				<i class="fas fa-search" id="search-icon"></i> -->
 			</div>
 		</div>
 	</header>
