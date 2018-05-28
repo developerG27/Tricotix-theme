@@ -221,7 +221,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
 .single img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%; height: 400px; object-fit: cover; object-position:100% 10%;}
 .main{background: #fafdff;}
 .main__box__image.single{position: relative; overflow: hidden; border-radius: 3px 3px 0px 0px;}
-.main__box__imge--gradient{width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); position: absolute;}
+.main__box__imge--gradient{width: 100%; height: 98.9%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); position: absolute;}
 .main__box__title{ position: absolute; color: #fff; bottom: 20px; width:100%; display: flex; justify-content: center; font-size: 2em;}
 .main__box__title p{text-align: center; display: block;}    
 .main__box.content{background: #fff; margin: 50px auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,.1);}
@@ -240,16 +240,22 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
 }
 /* Single Page Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
+  .single img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height:250px;}
+  .main__box__image.single{top:-50px;}
   .main__content{max-width: 380px; text-align: justify;}
   .main__box.content{min-width: 100%;}
 }
 /* Single Page Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
+  .single img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height:250px;}
+  .main__box__image.single{top:-50px;}
   .main__content{max-width: 350px; text-align: justify;}
   .main__box.content{min-width: 100%;}
 }
 /* Single Page Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
+  .single img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height:250px;}
+  .main__box__image.single{top:-50px;}
   .main__content{max-width: 295px; text-align: justify;}
   .main__box.content{min-width: 100%; max-width: 100%;}
 }
