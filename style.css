@@ -71,11 +71,9 @@ body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 .header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 10px 0px;}
 .header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6;}
 .header__search{display: flex; align-items: center;}
-.header__search input#searchform{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
-#searchsubmit{background: transparent;
-  font-family: 'FontAwesome'; background: transparent; color: #E8DCB8; border:none;}
-
-.header__search i{font-size: 2em; margin-left: 10px; color: #E8DCB8;}
+input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
+#searchsubmit{background: transparent; font-family: 'FontAwesome'; background: transparent; font-size: 2em; margin-left: 10px; color: #E8DCB8; border:none; cursor: pointer;}
+/* .header__search i{font-size: 2em; margin-left: 10px; color: #E8DCB8;} */
 
 /* Header Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
