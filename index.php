@@ -78,7 +78,7 @@
 
         <?php endwhile; else: ?>
         <div class="articolo">
-          <p>Non ho trovato nulla</p>
+          <p></i>Non ho trovato nulla</p>
         </div>
 
         <?php endif; ?>

@@ -271,3 +271,8 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
 .post-categories{margin: 40px 0px; padding: 0px; }
 .post-categories li{list-style: none; }
 .post-categories li a{  padding: 15px 25px; background: #A4A4A4; color: #111; font-size: 1.3em; border-radius: 3px; text-transform:uppercase;}
+
+
+/* Ricerca */
+.ricerca__w100{width: 100%; background: #E8DCB8; border: 2px solid #E7D7A9; border-radius: 3px; padding: 5px; font-size: 1.4em;}
+.query__search{background: #fff;}

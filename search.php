@@ -69,9 +69,10 @@ $ricerca = $_GET['s'];
 		</nav>
 
 		<main class="main">
-			<section class="main__box">
-				
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<section class="main__box ricerca">
+				<p class="ricerca__w100"> <i class="fas fa-search"></i> Risultati per "<?php echo $ricerca; ?>" </p>
+
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <a class="no-margin" href="<?php the_permalink(); ?>">
         <article <?php post_class('main__article'); ?>>
         <?php if( has_post_thumbnail()) { the_post_thumbnail();} ?>
@@ -82,12 +83,9 @@ $ricerca = $_GET['s'];
         </a>
 
         <?php endwhile; else: ?>
-        <div class="articolo">
           <p>Non ho trovato nulla</p>
-        </div>
 
         <?php endif; ?>
-
 				
 
 				
