@@ -60,7 +60,7 @@
 				</div>
 				
 			
-				<div class="main__content">
+				<div class="main__content single">
 				<?php
 				if (have_posts()) :
 							while (have_posts()) :

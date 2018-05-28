@@ -88,6 +88,7 @@ input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-
 @media screen and (max-width: 767px) and (min-width: 425px){
   .box{min-width: 410px; width: 410px; position: relative;}
   .header__search input{display: none; width: 85%; font-size: 1.2em; padding: 0px 5px;}
+  .header__logo span{font-size: 2em;}
   .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
 .visita{
@@ -97,13 +98,15 @@ input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-
 @media screen and (max-width: 424px) and (min-width: 375px){
   .box{min-width: 365px; width: 365px;}
   .header__search input{display: none; width: 85%; font-size: 1em; padding: 0px 2px;}
+  .header__logo span{font-size: 2em;}
   .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
 /* Header Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
   .box{min-width: 315px; width: 315px; }
   .header__logo span{font-size: 3em;}
-  .header__search input{display: none; width: 85%; font-size: 1em; padding: px;}
+  .header__search input{display: none; width: 85%; font-size: 1em;}
+  .header__logo span{font-size: 2em;}
   .header__search i{font-size: 1.8em;}
   .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
@@ -156,7 +159,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
   .nav{display: none;}
   .main__box{width: 100%; margin: 0px;}
   .main__article{width: 100%; margin-bottom: 0px;}
-  .main__article .attachment-post-thumbnail{ width: 100%; height: 250px; object-fit: cover; background-position: center center;}
+  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height: 250px;}
 }
 /* Article Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
@@ -164,7 +167,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
   .nav{display: none;}
   .main__box{width: 100%; margin: 0px;}
   .main__article{width: 100%; margin-bottom: 0px;}
-  .main__article .attachment-post-thumbnail{ width: 100%; height: 220px; object-fit: cover; background-position: center center;}
+  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height: 250px;}
   .main__article--gradient__p{font-size: 18px;}
 }
 /* Article Smartphone S */
@@ -173,8 +176,8 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
   .nav{display: none;}
   .main__box{width: 100%; margin: 0px;}
   .main__article{width: 100%; margin-bottom: 0px;}
-  .main__article .attachment-post-thumbnail{ width: 100%; height: 195px; object-fit: cover; background-position: center center;}
-  .main__article--gradient__p{font-size: 18px;}
+  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height: 200px;}
+  .main__article--gradient__p{font-size: 16px;}
 }
 
 /* Navigation */
@@ -240,8 +243,10 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
 }
 /* Single Page Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
-  .single img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height:250px;}
+  .single img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height:220px;}
   .main__box__image.single{top:-50px;}
+  .main__box__image.single p{font-size:22px;}
+  .main__content.single{margin: -50px auto;}
   .main__content{max-width: 380px; text-align: justify;}
   .main__box.content{min-width: 100%;}
 }
@@ -250,6 +255,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
   .single img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height:250px;}
   .main__box__image.single{top:-50px;}
   .main__content{max-width: 350px; text-align: justify;}
+  .main__content.single{margin: -50px auto;}
   .main__box.content{min-width: 100%;}
 }
 /* Single Page Smartphone S */
@@ -257,6 +263,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{max-width: 100%;
   .single img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height:250px;}
   .main__box__image.single{top:-50px;}
   .main__content{max-width: 295px; text-align: justify;}
+  .main__content.single{margin: -50px auto;}
   .main__box.content{min-width: 100%; max-width: 100%;}
 }
 
