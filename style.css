@@ -239,11 +239,14 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
 @media screen and (max-width: 1440px) and (min-width: 1024px){
   .main__content{max-width: 750px; text-align: justify;}
   .main__box.content{max-width: 980px; min-width: 780px;}
+  .main__box__image.single{top: -40px;}
 }
 /* Single Page Tablet */
 @media screen and (max-width: 1023px) and (min-width: 768px){
   .main__content{max-width: 530px; text-align: justify;}
   .main__box.content{max-width: 5600px; min-width: 560px;}
+  .main__box__image.single{top: -50px; border-radius: 0px;}
+  
 }
 /* Single Page Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
