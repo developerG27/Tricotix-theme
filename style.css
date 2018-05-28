@@ -279,3 +279,9 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
 /* Ricerca */
 .ricerca__w100{width: 100%; background: #E8DCB8; border: 2px solid #E7D7A9; border-radius: 3px; padding: 5px; font-size: 1.4em;}
 .query__search{background: #fff;}
+.searchform{
+  display: flex;
+}
+#searchsubmit{
+  width: 50px;
+}
