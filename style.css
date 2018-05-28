@@ -68,7 +68,7 @@ body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;fo
 body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 
 /* Header */
-.header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200;}
+.header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 10px 0px;}
 .header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6;}
 .header__search{display: flex; align-items: center;}
 .header__search input{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
@@ -110,7 +110,7 @@ body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 
 
 /* Nav */
-.nav{width: 250px; height: calc(100vh - 58px); background: #1A1A1A; color: #EFEFEF; position: sticky; top: 56px; z-index: 199;}
+.nav{width: 250px; height: calc(100vh - 78px); background: #1A1A1A; color: #EFEFEF; position: sticky; top:76px; z-index: 199;}
 .nav ul{padding: 0px; margin: 0px; }
 .nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px;}
 
