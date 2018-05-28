@@ -1,6 +1,5 @@
 <?php 
 $ricerca = $_GET['s'];
-
 ?> 
 
 <!DOCTYPE html>

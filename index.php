@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+$ricerca = $_GET['s'];
+get_header(); 
+
+?>
 	<div class="box">
 		<nav class="nav">
 			<!-- <ul>
