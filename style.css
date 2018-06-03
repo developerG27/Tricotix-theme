@@ -190,17 +190,17 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
 /* Navigation Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
   .main__navigation{display: flex;}
-  .main__navigation ul{position: fixed; bottom: 20px; right: 10px; z-index: 1000;}
+  .main__navigation ul{display:none; position: fixed; bottom: 20px; right: 10px; z-index: 1000;}
 }
 /* Navigation Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
   .main__navigation{display: flex;}
-  .main__navigation ul{position: fixed; bottom: 20px; right: 10px; z-index: 1000;}
+  .main__navigation ul{display:none;  position: fixed; bottom: 20px; right: 10px; z-index: 1000;}
 }
 /* Navigation Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
   .main__navigation{display: flex;}
-  .main__navigation ul{position: fixed; bottom: 20px; right: 10px; z-index: 1000;}
+  .main__navigation ul{display:none; position: fixed; bottom: 20px; right: 10px; z-index: 1000;}
 }
 
 /* Pagination */
