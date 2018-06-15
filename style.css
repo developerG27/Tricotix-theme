@@ -61,7 +61,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
  /* Universal */
 body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif; background: #1a1a1a;}
-.box{width: 1400px; max-width: 1400px;  min-width: 1200px; margin: auto; display: flex; justify-content: space-between;}
+.box{width: 98%; margin: auto; display: flex; justify-content: space-between;}
 .hide{display: none;}
 .no-margin{margin: 0px;}
 .menu-item{list-style: none;}
@@ -99,7 +99,7 @@ input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-
   .box{min-width: 365px; width: 365px;}
   input#s{display: none; width: 85%; font-size: 1em; padding: 0px 2px;}
   #searchsubmit{font-size: 2em;}
-  .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
+  .input--show{display: block !important; position: absolute; top: ;op: 5px; left: 0;}
 }
 /* Header Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
@@ -112,10 +112,10 @@ input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-
 
 
 /* Nav */
-.nav{width: 250px; height: calc(100vh - 78px); background: #1A1A1A; color: #EFEFEF; position: sticky; top:76px; z-index: 199;}
-.nav--name__item
-.nav ul{padding: 0px; margin: 0px; }
-.nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px;}
+.nav{width: calc(330px - 1%) ; height: calc(100vh - 78px); background: #1A1A1A; color: #EFEFEF; position: sticky; top:76px; z-index: 199; }
+.nav ul{padding: 0px; margin: 0px; display: flex; flex-wrap: wrap; margin-left: -5%; width: 100%; background: #1D1D1D;}
+.nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px; width: 50%; text-align: center;}
+.nav ul .nav__item:hover{ background: #2A2A2A; cursor: pointer;}
 nav.nav{padding: 0px 0px 0px 10px;}
 
 /* Nav Laptop */
