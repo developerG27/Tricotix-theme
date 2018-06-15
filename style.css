@@ -68,7 +68,7 @@ body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;fo
 body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 
 /* Header */
-.header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 10px 0px;}
+.header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 3px 0px;}
 .header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6; margin-left: 15px;}
 .header__search{display: flex; align-items: center; margin-right: 15px;}
 input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
@@ -112,13 +112,21 @@ input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-
 
 
 /* Nav */
-.nav{width: calc(330px) ; height: calc(100vh - 78px); background: #1A1A1A; color: #EFEFEF; position: sticky; top:76px; z-index: 199; }
-p.nav--name__item{color: #a9a9a9; font-size: 22px; margin:0px; margin-top: 10px;}
-.nav--name--hr{width: 250px; float: left;}
-.nav ul{padding: 0px; margin: 0px; display: flex; flex-wrap: wrap; margin-left: -5%; width: 100%; background: #1D1D1D;}
+.nav{width: 330px ; height: calc(100vh - 78px); background: #1A1A1A; color: #EFEFEF; position: sticky; top:76px; z-index: 199; }
+p.nav--name__item{color: #a9a9a9; font-size: 22px; margin:0px; margin-top: 10px; margin-left: 15px;}
+.nav--name--hr{width: 250px; float: left; margin-left: 15px;}
+.nav ul{padding: 0px; margin: 0px; display: flex; flex-wrap: wrap;  width: 100%; background: #1D1D1D;}
 .nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px; width: 50%; text-align: center;}
 .nav ul .nav__item:hover{ background: #2A2A2A; cursor: pointer;}
-nav.nav{padding: 0px 0px 0px 10px;}
+nav.nav{padding: 0px 0px 0px 0px;}
+.nav__sexstyle{width: 100%; display: flex; flex-wrap: wrap;}
+.nav--male,.nav--female{width: 50%; text-align: center; font-size: 40px; padding: 20px 0px;}
+.fa-mars{color: #00C2FF;}
+.fa-venus{color: #FF91CC;}
+span.corto, span.medio, span.lungo{width: 33.33%; text-align: center; padding: 20px 0px; background:#1D1D1D; font-size: 20px;}
+span:hover{ background: #2A2A2A; cursor: pointer;}
+.nav__shop{width: 100%; display: flex; flex-wrap: wrap;}
+.nav__shop--item{width:50%; text-align: center; padding: 20px 0px; background: #1D1d1d; font-size: 20px;}
 
 /* Nav Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
