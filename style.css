@@ -113,6 +113,7 @@ input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-
 
 /* Nav */
 .nav{width: 250px; height: calc(100vh - 78px); background: #1A1A1A; color: #EFEFEF; position: sticky; top:76px; z-index: 199;}
+.nav--name__item
 .nav ul{padding: 0px; margin: 0px; }
 .nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px;}
 nav.nav{padding: 0px 0px 0px 10px;}
