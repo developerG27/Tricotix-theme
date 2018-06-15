@@ -61,7 +61,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
  /* Universal */
 body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif; background: #1a1a1a;}
-.box{width: 98%; margin: auto; display: flex; justify-content: space-between;}
+.box{width:100%; margin: auto; display: flex; justify-content: space-between;}
 .hide{display: none;}
 .no-margin{margin: 0px;}
 .menu-item{list-style: none;}
@@ -69,8 +69,8 @@ body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 
 /* Header */
 .header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 10px 0px;}
-.header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6;}
-.header__search{display: flex; align-items: center;}
+.header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6; margin-left: 15px;}
+.header__search{display: flex; align-items: center; margin-right: 15px;}
 input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
 #searchsubmit{background: transparent; font-family: 'FontAwesome'; background: transparent; font-size: 2em; margin-left: 10px; color: #E8DCB8; border:none; cursor: pointer;}
 /* .header__search i{font-size: 2em; margin-left: 10px; color: #E8DCB8;} */
@@ -112,7 +112,9 @@ input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-
 
 
 /* Nav */
-.nav{width: calc(330px - 1%) ; height: calc(100vh - 78px); background: #1A1A1A; color: #EFEFEF; position: sticky; top:76px; z-index: 199; }
+.nav{width: calc(330px) ; height: calc(100vh - 78px); background: #1A1A1A; color: #EFEFEF; position: sticky; top:76px; z-index: 199; }
+p.nav--name__item{color: #a9a9a9; font-size: 22px; margin:0px; margin-top: 10px;}
+.nav--name--hr{width: 250px; float: left;}
 .nav ul{padding: 0px; margin: 0px; display: flex; flex-wrap: wrap; margin-left: -5%; width: 100%; background: #1D1D1D;}
 .nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px; width: 50%; text-align: center;}
 .nav ul .nav__item:hover{ background: #2A2A2A; cursor: pointer;}

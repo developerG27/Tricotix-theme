@@ -12,7 +12,7 @@ get_header();
 				<li class="nav__item">Quarto</li>
 			</ul> -->
 			<p class="nav--name__item">Categorie</p>
-			<hr>
+			<hr class="nav--name--hr">
 			<?php
       wp_nav_menu(array(  
         'container' => 'ul',
