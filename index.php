@@ -11,7 +11,7 @@ get_header();
 				<li class="nav__item">Terzo</li>
 				<li class="nav__item">Quarto</li>
 			</ul> -->
-
+			<p>Categorie</p>
 			<?php
       wp_nav_menu(array(  
         'container' => 'ul',
