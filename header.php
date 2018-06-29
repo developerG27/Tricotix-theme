@@ -35,7 +35,6 @@
 			<div class="header__search">
 			<?php
     				get_search_form();
-            
     ?>
 			</div>
 		</div>

@@ -1,5 +1,5 @@
 /*
-Theme Name: Twenty Fifteen
+Theme Name: Tricotix Theme
 Theme URI: https://wordpress.org/themes/twentyfifteen/
 Author: the WordPress team
 Author URI: https://wordpress.org/
@@ -66,6 +66,8 @@ body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;fo
 .no-margin{margin: 0px;}
 .menu-item{list-style: none;}
 body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
+.visita{display: block;} 
+
 
 /* Header */
 .header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 3px 0px;}
@@ -73,27 +75,20 @@ body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 .header__search{display: flex; align-items: center; margin-right: 15px;}
 input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
 #searchsubmit{background: transparent; font-family: 'FontAwesome'; background: transparent; font-size: 2em; margin-left: 10px; color: #E8DCB8; border:none; cursor: pointer;}
-/* .header__search i{font-size: 2em; margin-left: 10px; color: #E8DCB8;} */
-
 /* Header Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
-  .box{min-width: 1010px; width: 1010px;}
 }
 /* Header Tablet */
 @media screen and (max-width: 1023px) and (min-width: 768px){
-  .box{min-width: 750px; width: 750px;}
   .header__search input{width:300px; font-size: 1.3em;}
 }
 /* Header Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
-  .box{min-width: 410px; width: 410px; position: relative;}
   input#s{display: none; width: 85%; font-size: 1.2em; padding: 0px 5px;}
   #searchsubmit{background: transparent; font-family: 'FontAwesome'; background: transparent; font-size: 2em; margin-left: 10px; color: #E8DCB8; border:none; cursor: pointer;}
   .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
 }
-.visita{
-  display: block;
-} 
+
 /* Header Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
   .box{min-width: 365px; width: 365px;}
@@ -118,6 +113,7 @@ p.nav--name__item{color: #a9a9a9; font-size: 22px; margin:0px; margin-top: 10px;
 .nav ul{padding: 0px; margin: 0px; display: flex; flex-wrap: wrap;  width: 100%; background: #1D1D1D;}
 .nav ul .nav__item{list-style: none; font-size: 24px; padding: 17px 0px; width: 50%; text-align: center;}
 .nav ul .nav__item:hover{ background: #2A2A2A; cursor: pointer;}
+hr.nav--name--hr{width: 85%}
 nav.nav{padding: 0px 0px 0px 0px;}
 .nav__sexstyle{width: 100%; display: flex; flex-wrap: wrap;}
 .nav--male,.nav--female{width: 50%; text-align: center; font-size: 40px; padding: 20px 0px;}
@@ -127,12 +123,14 @@ span.corto, span.medio, span.lungo{width: 33.33%; text-align: center; padding: 2
 span:hover{ background: #2A2A2A; cursor: pointer;}
 .nav__shop{width: 100%; display: flex; flex-wrap: wrap;}
 .nav__shop--item{width:50%; text-align: center; padding: 20px 0px; background: #1D1d1d; font-size: 20px;}
-
 /* Nav Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
-  
+  .nav{min-width:220px;width:220px}
 }
 /* Nav Tablet */
+@media screen and (max-width: 1023px) and (min-width: 768px){
+  .nav{min-width:200px;width:200px}
+}
 /* Nav Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
   .nav{display: none;}
@@ -149,23 +147,24 @@ span:hover{ background: #2A2A2A; cursor: pointer;}
 
 /* Article */
 .main{ width: 100%; background: #EFEFEF; position: relative;}
-.main__box{max-width: 1100px; display: flex; flex-direction: row; flex-wrap: wrap; display: flex; justify-content: space-between;  margin: auto; margin-top: 20px;}
-.main__box.content{max-width: 1042px; margin: 0px auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
+.main__box{max-width: 1450px; display: flex; flex-direction: row; flex-wrap: wrap; display: flex; justify-content: center;  margin: auto; margin-top: 20px;}
+.main__box.content{max-width: 1302px; margin: 0px auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .main__box p.category{width: 100%;}
 .main__content{max-width: 800px; margin: 0 auto;}
-.main__article{position: relative; width: 340px; display: flex; overflow: hidden; margin-bottom: 40px;}
+.main__article{position: relative; width: 340px; display: flex; overflow: hidden; margin:10px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);}
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 400px; object-fit: cover; object-position:center;}
 .main__article--gradient{position: absolute;  width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); bottom:0; display: flex; justify-content: center; align-items: flex-end;}
 .main__article--gradient__p{color: #fff; font-size: 21px; padding: 0px 10px;}
 /* Article Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
-  .main__box{width: 750px;}
+  .main__box{width: 99%;}
+  .main__article{width:280px; height:350px;}
   .main__article .attachment-post-thumbnail{ width: 230px; height: 330px;}
 }
 /* Article Tablet */
 @media screen and (max-width: 1023px) and (min-width: 768px){
-  .main__box{width: 520px;}
-  .main__article{width:250px;}
+  .main__box{width: 99%;}
+  .main__article{width:260px; height: 350px; margin: 5px;}
   .main__article .attachment-post-thumbnail{ width: 240px; height: 330px;}
 }
 /* Article Smartphone L */
@@ -173,7 +172,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
   .box{width: 100%;}
   .nav{display: none;}
   .main__box{width: 100%; margin: 0px;}
-  .main__article{width: 100%; margin-bottom: 0px;}
+  .main__article{width: 100%; margin: 0px;margin:0px;}
   img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height: 250px; width: 100%;}
 }
 /* Article Smartphone M */
@@ -181,18 +180,16 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
   .box{width: 100%;}
   .nav{display: none;}
   .main__box{width: 100%; margin: 0px;}
-  .main__article{width: 100%; margin-bottom: 0px;}
+  .main__article{width: 100%; margin: 0px;margin:0px;}
   img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height: 250px; width: 100%;}
-  .main__article--gradient__p{font-size: 18px;}
 }
 /* Article Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
   .box{width: 100%;}
   .nav{display: none;}
   .main__box{width: 100%; margin: 0px;}
-  .main__article{width: 100%; margin-bottom: 0px;}
-  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height: 200px; width: 100%;}
-  .main__article--gradient__p{font-size: 16px;}
+  .main__article{width: 100%; margin: 0px;margin:0px;}
+  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{height: 250px; width: 100%;}
 }
 
 /* Navigation */
@@ -242,7 +239,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
 .main__box__imge--gradient{width: 100%; height: 98.9%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); position: absolute;}
 .main__box__title{ position: absolute; color: #fff; bottom: 20px; width:100%; display: flex; justify-content: center; font-size: 2em;}
 .main__box__title p{text-align: center; display: block;}    
-.main__box.content{background: #fff; margin: 50px auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,.1);}
+.main__box.content{background: #fff; margin: 50px auto; border-radius: 3px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);}
 .main__content{max-width: 850px; text-align: justify;}
 .main__content p{font-size: 20px; font-weight: 200; }
 
@@ -300,6 +297,9 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
 }
 #searchsubmit{
   width: 50px;
+}
+@media screen and (max-width: 767px) and (min-width: 425px){
+  input#s{display: none;}
 }
 @media screen and (max-width: 374px) and (min-width: 320px){
   input#s{width: 77%; margin:10px 0px 0px 2px;}
