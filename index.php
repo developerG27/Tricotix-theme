@@ -19,7 +19,7 @@ get_header();
         'container_class' => 'menu',
         'menu' => 'li',
         'menu_class' => 'item',
-        'link_before' => '<li class="nav__item">',
+        'link_before' => '<li class="nav__item nav--hover">',
         'link_after' => '</li>'
         ));
 			?>
@@ -27,25 +27,25 @@ get_header();
 			<p class="nav--name__item">Stili capelli</p>
 			<hr class="nav--name--hr">
 			<div class="nav__sexstyle">
-				<span class="fas fa-mars  nav--male"></span>
-				<span class="fas fa-venus nav--female"></span>
-				<span class="corto">Corto</span>
-				<span class="medio">Medio</span>
-				<span class="lungo">Lungo</span>
+				<span class="nav--hover fas fa-mars  nav--male"></span>
+				<span class="nav--hover fas fa-venus nav--female"></span>
+				<span class="nav--hover corto">Corto</span>
+				<span class="nav--hover medio">Medio</span>
+				<span class="nav--hover lungo">Lungo</span>
 			</div>
 
 			<br>
 			<p class="nav--name__item">Shop</p>
 			<hr class="nav--name--hr">
 			<div class="nav__shop">
-				<span class="nav__shop--item">Phon</span>
-				<span class="nav__shop--item">Piastra</span>
-				<span class="nav__shop--item">Shampoo</span>
-				<span class="nav__shop--item">Balsamo</span>
-				<span class="nav__shop--item">Lacca</span>
-				<span class="nav__shop--item">Gel</span>
-				<span class="nav__shop--item">Cera</span>
-				<span class="nav__shop--item">Balsam</span>
+				<span class="nav--hover nav__shop--item">Phon</span>
+				<span class="nav--hover nav__shop--item">Piastra</span>
+				<span class="nav--hover nav__shop--item">Shampoo</span>
+				<span class="nav--hover nav__shop--item">Balsamo</span>
+				<span class="nav--hover nav__shop--item">Lacca</span>
+				<span class="nav--hover nav__shop--item">Gel</span>
+				<span class="nav--hover nav__shop--item">Cera</span>
+				<span class="nav--hover nav__shop--item">Balsam</span>
 			</div>
 		</nav>
 
