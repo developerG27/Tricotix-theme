@@ -123,7 +123,7 @@ nav.nav{padding: 0px 0px 0px 0px;}
 .nav--male,.nav--female{width: 50%; text-align: center; font-size: 40px; padding: 20px 0px;}
 .fa-mars{color: #00C2FF;}
 .fa-venus{color: #FF91CC;}
-span.corto, span.medio, span.lungo{width: 33.33%; text-align: center; padding: 20px 0px; background:#1D1D1D; font-size: 20px;}
+span.corto, span.medio, span.lungo{width: 33.33%; text-align: center; padding: 20px 0px; background:#1D1D1D; font-size: 24px;}
 
 .nav__shop{width: 100%; display: flex; flex-wrap: wrap;}
 .nav__shop--item{width:50%; text-align: center; padding: 20px 0px; background: #1D1d1d; font-size: 20px;}
@@ -131,6 +131,7 @@ span.corto, span.medio, span.lungo{width: 33.33%; text-align: center; padding: 2
 @media screen and (max-width: 1440px) and (min-width: 1024px){
   .nav ul .nav__item{font-size:20px;}
   .nav{min-width:220px;width:220px}
+  span.corto, span.medio, span.lungo{font-size:20px;}
 }
 /* Nav Tablet */
 @media screen and (max-width: 1023px) and (min-width: 768px){

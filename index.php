@@ -27,8 +27,11 @@ get_header();
 			<p class="nav--name__item">Stili capelli</p>
 			<hr class="nav--name--hr">
 			<div class="nav__sexstyle">
-				<span class="nav--hover fas fa-mars  nav--male"></span>
-				<span class="nav--hover fas fa-venus nav--female"></span>
+				<form action="/action_page.php">
+					<input type="radio" name="gender" value="male" checked> <span class="nav--hover fas fa-mars  nav--male"></span><br>
+					<input type="radio" name="gender" value="female"> <span class="nav--hover fas fa-venus nav--female"></span><br>
+					<input type="submit">
+				</form> 			
 				<span class="nav--hover corto">Corto</span>
 				<span class="nav--hover medio">Medio</span>
 				<span class="nav--hover lungo">Lungo</span>
