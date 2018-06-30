@@ -70,12 +70,17 @@ body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 
 
 /* Header */
-.header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 3px 0px;}
+.header{width:100%; height:auto; background:#262626; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 3px 0px;}
 .header__box--header--search{display: flex; width: 45%; justify-content: space-between;}
 .header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6; margin-left: 15px;}
 .header__search{display: flex; align-items: center; margin-right: 15px;}
 input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
 #searchsubmit{background: transparent; font-family: 'FontAwesome'; background: transparent; font-size: 2em; margin-left: 10px; color: #E8DCB8; border:none; cursor: pointer;}
+.header__nav{display: flex;align-items: center;}
+.header__nav ul{display: flex; font-weight: bold; margin: 0px; font-size: 18px;}
+.header__nav--item{list-style: none; margin: 0px 15px; padding: 8px;}
+.header__nav--item:hover{border-radius: 3px; background: #1c1c1c;}
+
 /* Header Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
 }
@@ -371,5 +376,3 @@ input[type="radio"]{
 
 
 /* Nav shop */
-.nav{width: auto;display: flex; margin: 0px 20px; padding: 0px;justify-content: center; flex-direction: row;height:60px; background: #1A1A1A; color: #EFEFEF;}
-.nav ul .nav__item{width:100px;}
