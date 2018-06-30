@@ -28,14 +28,28 @@
 <body class="tricotix">
 	<header class="header">
 		<div class="box">
-			<div class="header__logo">
-				<a href="<?php bloginfo('url'); ?>" class="no-margin"><span>Tricotix</span></a>
+			<div class="header__box--header--search">
+				<div class="header__logo">
+					<a href="<?php bloginfo('url'); ?>" class="no-margin"><span>Tricotix</span></a>
+				</div>
+				
+				<div class="header__search">
+				<?php
+							get_search_form();
+				?>
+				</div>
 			</div>
-			
-			<div class="header__search">
+			<nav class="nav">
 			<?php
-    				get_search_form();
-    ?>
-			</div>
+      wp_nav_menu(array(  
+        'container' => 'ul',
+        'container_class' => 'menu',
+        'menu' => 'li',
+        'menu_class' => 'item',
+        'link_before' => '<li class="nav__item nav--hover">',
+        'link_after' => '</li>'
+        ));
+			?>
+			</nav>
 		</div>
 	</header>

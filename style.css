@@ -71,6 +71,7 @@ body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 
 /* Header */
 .header{width:100%; height:auto; background:#1A1A1A; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 3px 0px;}
+.header__box--header--search{display: flex; width: 45%; justify-content: space-between;}
 .header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6; margin-left: 15px;}
 .header__search{display: flex; align-items: center; margin-right: 15px;}
 input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
@@ -347,9 +348,13 @@ input[type="radio"]{
 
 
 /* SHOP */
+
 .main__box{width:1350px; justify-content: space-between;}
+
+.shop--title{width:100%; margin: 20px; font-size: 26px;}
+
 /* Card shop */
-.card__shop{width:410px; height:458px; margin: 10px; display: flex; justify-content: space-between; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);}
+.card__shop{width:410px; height:458px; margin: 10px; display: flex; justify-content: space-between;}
 .card__image{width:270px; overflow: hidden; position: relative; }
 .card__img--custom{object-fit: cover;width:100%;height:100%; object-position: center center; }
 .card__primary{position: absolute; bottom:0px; display: flex;  width:100%; margin: auto; justify-content: space-between; padding: 10px 0px;}
@@ -357,4 +362,14 @@ input[type="radio"]{
 .card__price{margin-right: 10px; font-size: 25px;}
 .card--side{background:#EDEDED; width:140px;height:100%; display: flex; flex-direction: column; justify-content: space-between; font-size: 18px;}
 .card__feature--style{ margin: 4px auto; width:94%; line-height:50px; text-align: center; background: #FFFFFF; border-radius: .25rem;}
+.card__feature--style:hover{background:#f2f2f2}
 .card__button{width: 140px;background: #5DBDE5;text-align: center;line-height:50px; color:#fff; font-size:22px;}
+
+.gold{border:1px solid #FFF1C6;}
+.bronze{border:1px solid #FFC581;}
+.silver{border: 1px solid #CECECE;}
+
+
+/* Nav shop */
+.nav{width: auto;display: flex; margin: 0px 20px; padding: 0px;justify-content: center; flex-direction: row;height:60px; background: #1A1A1A; color: #EFEFEF;}
+.nav ul .nav__item{width:100px;}
