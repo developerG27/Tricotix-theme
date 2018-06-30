@@ -67,6 +67,7 @@ body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;fo
 .menu-item{list-style: none;}
 body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 .visita{display: block;} 
+.item-2{display: none;}
 
 
 /* Header */
@@ -100,12 +101,18 @@ input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-
 }
 /* Header Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
-  .header__box--header--search{min-width: 55%; width: 55%;}
-  .header__logo span{font-size: 2.2em;}
-  input#s{width: 180px !important;line-height:30px;font-size: 1.3em;}
-  #searchsubmit{ font-size: 17px; margin-left: 0px;}
-  .header__nav ul{font-size: 17px;}
-  .header__nav--item{margin: 0px 6px; padding: 5px;}
+  .header{width:100%; margin:0px; padding:0px;}
+  .header__logo span{display: none;}
+  .header__box--header--search{display: none;}
+  #searchsubmit{display: none;}
+  .header__nav{display: none;}
+  .menu-item{padding: 15px 0px;}
+  .item-2{width:100%; display: flex; justify-content: space-between; height:100%; padding:0px; margin:0px;}
+  .item-2 li{width:33%; text-align: center;}
+  .item-2 li a{width: 100%;padding: 13px 40%;}
+  .item-2 li:hover{background: red;}
+  }
+
 }
 
 /* Header Smartphone M */

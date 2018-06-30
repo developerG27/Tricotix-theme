@@ -28,6 +28,15 @@
 <body class="tricotix">
 	<header class="header">
 		<div class="box">
+			<?php
+					wp_nav_menu(array(  
+						'theme-location' => 'theme-2',
+						'container' => 'ul',
+						'container_class' => 'menu',
+						'menu' => 'li',
+						'menu_class' => 'item-2',
+						));
+			?>
 			<div class="header__box--header--search">
 				<div class="header__logo">
 					<a href="<?php bloginfo('url'); ?>" class="no-margin"><span>Tricotix</span></a>
@@ -42,6 +51,7 @@
 			<nav class="header__nav">
 				<?php
 					wp_nav_menu(array(  
+						'theme-location' => 'theme-1',
 						'container' => 'ul',
 						'container_class' => 'menu',
 						'menu' => 'li',
@@ -50,6 +60,8 @@
 						'link_after' => '</li>'
 						));
 				?>
+				
+				
 			</nav>
 		</div>
 	</header>
