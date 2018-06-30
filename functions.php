@@ -16,6 +16,8 @@ add_theme_support('post-thumbnails');
 
 //menu
 register_nav_menus( array(
-  'menu-top' => 'principale',
-  'menu-footer' => 'menu footer'
+  'menu-1' => 'principale',
+  'menu-2' => 'mobile',
 ));
+
+

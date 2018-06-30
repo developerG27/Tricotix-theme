@@ -1,5 +1,7 @@
-<?php get_header(); 
-	
+<?php 
+$ricerca = $_GET['s'];
+get_header(); 
+
 ?>
 	<div class="box">
 		<nav class="nav">
@@ -9,17 +11,42 @@
 				<li class="nav__item">Terzo</li>
 				<li class="nav__item">Quarto</li>
 			</ul> -->
-
+			<p class="nav--name__item">Blog</p>
+			<hr class="nav--name--hr">
 			<?php
       wp_nav_menu(array(  
         'container' => 'ul',
         'container_class' => 'menu',
         'menu' => 'li',
         'menu_class' => 'item',
-        'link_before' => '<li class="nav__item">',
+        'link_before' => '<li class="nav__item nav--hover">',
         'link_after' => '</li>'
         ));
-      ?>
+			?>
+			<br>
+			<p class="nav--name__item">Stili capelli</p>
+			<hr class="nav--name--hr">
+			<div class="nav__sexstyle">
+				<span class="nav--hover fas fa-mars  nav--male"></span>
+				<span class="nav--hover fas fa-venus nav--female"></span>
+				<span class="nav--hover corto">Corto</span>
+				<span class="nav--hover medio">Medio</span>
+				<span class="nav--hover lungo">Lungo</span>
+			</div>
+
+			<br>
+			<p class="nav--name__item">Shop</p>
+			<hr class="nav--name--hr">
+			<div class="nav__shop">
+				<span class="nav--hover nav__shop--item">Phon</span>
+				<span class="nav--hover nav__shop--item">Piastra</span>
+				<span class="nav--hover nav__shop--item">Shampoo</span>
+				<span class="nav--hover nav__shop--item">Balsamo</span>
+				<span class="nav--hover nav__shop--item">Lacca</span>
+				<span class="nav--hover nav__shop--item">Gel</span>
+				<span class="nav--hover nav__shop--item">Cera</span>
+				<span class="nav--hover nav__shop--item">Balsam</span>
+			</div>
 		</nav>
 
 		<main class="main">
