@@ -120,6 +120,10 @@ p.nav--name__item{color: #a9a9a9; font-size: 22px; margin:0px; margin-top: 10px;
 hr.nav--name--hr{width: 85%}
 nav.nav{padding: 0px 0px 0px 0px;}
 .nav__sexstyle{width: 100%; display: flex; flex-wrap: wrap;}
+label.male,label.female{
+  text-align: center;
+  width:50%;
+}
 .nav--male,.nav--female{width: 50%; text-align: center; font-size: 40px; padding: 20px 0px;}
 .fa-mars{color: #00C2FF;}
 .fa-venus{color: #FF91CC;}
@@ -323,4 +327,17 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
 @media screen and (max-width: 374px) and (min-width: 320px){
   input#s{width: 77%; margin:10px 0px 0px 2px;}
   .box{width: 100%;}
+}
+
+span.nav--hover.fas.fa-mars.nav--male,span.nav--hover.fas.fa-venus.nav--female{
+  width:100%;
+}
+input[type="radio"]{
+  display: none;
+}
+#male:checked ~ label.male{
+  background:#2A2A2A;
+}
+#female:checked ~ label.female{
+  background:#2A2A2A;
 }
