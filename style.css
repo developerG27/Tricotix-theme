@@ -73,9 +73,9 @@ body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 .header{width:100%; height:auto; background:#262626; color:#fff; align-items: center; position: sticky; top: 0; z-index: 200; padding: 3px 0px;}
 .header__box--header--search{display: flex; width: 45%; justify-content: space-between;}
 .header__logo span{font-family: 'Megrim'; font-size: 3em; color:#FFF1C6; margin-left: 15px;}
-.header__search{display: flex; align-items: center; margin-right: 15px;}
+.header__search{display: flex; align-items: center; }
 input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-family: 'Roboto'; font-size: 1.4em; padding: 0px 10px; font-weight:200;}
-#searchsubmit{background: transparent; font-family: 'FontAwesome'; background: transparent; font-size: 2em; margin-left: 10px; color: #E8DCB8; border:none; cursor: pointer;}
+#searchsubmit{font-family: 'FontAwesome'; background: transparent; font-size: 2em; margin-left: 10px; color: #E8DCB8; border:none; cursor: pointer;}
 .header__nav{display: flex;align-items: center;}
 .header__nav ul{display: flex; font-weight: bold; margin: 0px; font-size: 18px;}
 .header__nav--item{list-style: none; margin: 0px 15px; padding: 8px;}
@@ -83,18 +83,29 @@ input#s{background: #EFEFEF; border: none; line-height:45px; width: 420px; font-
 
 /* Header Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
+  .header__box--header--search{width:70%;}
+  .header__logo span{font-size: 2.7em;}
+  input#s{width: 300px !important;}
+  .header__nav ul{font-size: 17px;}
+  .header__nav--item{margin: 0px 8px; padding: 8px;}
 }
 /* Header Tablet */
 @media screen and (max-width: 1023px) and (min-width: 768px){
-  .header__search input{width:300px; font-size: 1.3em;}
-  .header__logo span{font-size:2.8em;}
+  .header__box--header--search{min-width: 55%; width: 55%;}
+  .header__logo span{font-size: 2.2em;}
+  input#s{width: 180px !important;line-height:30px;font-size: 1.3em;}
+  #searchsubmit{ font-size: 17px; margin-left: 0px;}
+  .header__nav ul{font-size: 17px;}
+  .header__nav--item{margin: 0px 6px; padding: 5px;}
 }
 /* Header Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
-  input#s{display: none; width: 85%; font-size: 1.2em; padding: 0px 5px;}
-  #searchsubmit{background: transparent; font-family: 'FontAwesome'; background: transparent; font-size: 2em; margin-left: 10px; color: #E8DCB8; border:none; cursor: pointer;}
-  .input--show{display: block !important; position: absolute; top: 5px; left: 0;}
-  .header__logo span{font-size:2.7em;}
+  .header__box--header--search{min-width: 55%; width: 55%;}
+  .header__logo span{font-size: 2.2em;}
+  input#s{width: 180px !important;line-height:30px;font-size: 1.3em;}
+  #searchsubmit{ font-size: 17px; margin-left: 0px;}
+  .header__nav ul{font-size: 17px;}
+  .header__nav--item{margin: 0px 6px; padding: 5px;}
 }
 
 /* Header Smartphone M */
