@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
 <head>
@@ -30,11 +29,6 @@
 			</div>
 		</div>
 	</header>
-=======
-<?php 
-$ricerca = $_GET['s'];
-get_header(); 
->>>>>>> shop
 
 ?>
 	<div class="box">

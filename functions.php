@@ -12,12 +12,12 @@ wp_enqueue_script('jquery');
 wp_enqueue_script('script',get_template_directory_uri().'/script.js',array(),rand(),false);
 
 //Aggiungo le post thumbnails
-add_theme_support('post-thumbnails'); 
+add_theme_support('post-thumbnails');   
 
 //menu
 register_nav_menus( array(
-  'menu-1' => 'principale',
-  'menu-2' => 'mobile',
+  'menu-1' => esc_html__('principale'),
+  'menu-2' => esc_html__('mobile'),
 ));
 
 

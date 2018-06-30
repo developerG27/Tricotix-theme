@@ -30,7 +30,8 @@
 		<div class="box">
 			<?php
 					wp_nav_menu(array(  
-						'theme-location' => 'theme-2',
+						'menu' => 'mobile',
+						'theme-location' => 'menu-2',
 						'container' => 'ul',
 						'container_class' => 'menu',
 						'menu' => 'li',
@@ -51,7 +52,8 @@
 			<nav class="header__nav">
 				<?php
 					wp_nav_menu(array(  
-						'theme-location' => 'theme-1',
+						'menu' => 'principale',
+						'theme-location' => 'menu-1',
 						'container' => 'ul',
 						'container_class' => 'menu',
 						'menu' => 'li',
