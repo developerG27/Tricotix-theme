@@ -27,43 +27,26 @@
 </head>
 <body class="tricotix">
 	<header class="header">
-		<div class="box">
-			<?php
-					wp_nav_menu(array(  
-						'menu' => 'mobile',
-						'theme-location' => 'menu-2',
-						'container' => 'ul',
-						'container_class' => 'menu',
-						'menu' => 'li',
-						'menu_class' => 'item-2',
-						));
-			?>
+		<div class="box">	
+
 			<div class="header__box--header--search">
 				<div class="header__logo">
 					<a href="<?php bloginfo('url'); ?>" class="no-margin"><span>Tricotix</span></a>
 				</div>
-			
 				<div class="header__search">
 					<?php
 						get_search_form();
 					?>
 				</div>
 			</div>
+
 			<nav class="header__nav">
-				<?php
-					wp_nav_menu(array(  
-						'menu' => 'principale',
-						'theme-location' => 'menu-1',
-						'container' => 'ul',
-						'container_class' => 'menu',
-						'menu' => 'li',
-						'menu_class' => 'item',
-						'link_before' => '<li class="header__nav--item">',
-						'link_after' => '</li>'
-						));
-				?>
-				
-				
+				<ul class="item">
+					<a href="#"><li class="header__nav--item">Blog</li></a>
+					<a href="#"><li class="header__nav--item">Shop</li></a>
+					<a href="#"><li class="header__nav--item">Stili</li></a>
+				</ul>
 			</nav>
+
 		</div>
 	</header>
