@@ -186,6 +186,12 @@ nav.nav{padding: 0px 0px 0px 10px;}
 .main__categorie ul li:nth-child(1){position: sticky; top: 100px;} 
 .main__categorie ul li:nth-child(2){position: sticky; top: 170px;}
 .main__categorie ul li:nth-child(3){position: sticky; top: 240px;} 
+.main__categorie ul li:nth-child(4){position: sticky; top: 310px;} 
+.main__categorie ul li:nth-child(5){position: sticky; top: 380px;} 
+.main__categorie ul li:nth-child(6){position: sticky; top: 450px;} 
+.main__categorie ul li:nth-child(7){position: sticky; top: 520px;} 
+.main__categorie ul li:nth-child(8){position: sticky; top: 590px;} 
+.main__categorie ul li:nth-child(9){position: sticky; top: 660px;} 
 /* Categorie tablet */
 @media screen and (max-width: 1023px) and (min-width: 768px){
   .main__categorie{width:100%;}
@@ -194,19 +200,19 @@ nav.nav{padding: 0px 0px 0px 10px;}
 }
 /* Categorie Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
-  .main__categorie{width:100%;}
+  .main__categorie{width:100%; margin: 10px 0px;}
   .main__categorie ul{display: flex; flex-direction: row; width:100%;justify-content: center;}
   .main__categorie ul li{margin: 0px 10px; padding: 5px 5px;}
 }
 /* Categorie Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
-  .main__categorie{width:100%;}
+  .main__categorie{width:100%;margin: 10px 0px;}
   .main__categorie ul{display: flex; flex-direction: row;width:100%;justify-content: center;}
   .main__categorie ul li{margin: 0px 10px; padding: 5px 5px;}
 }
 /* Categorie Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
-  .main__categorie{width:100%;}
+  .main__categorie{width:100%;margin: 10px 0px;}
   .main__categorie ul{display: flex; flex-direction: row;width:100%;justify-content: center;}
   .main__categorie ul li{margin: 0px 5px; padding: 5px 5px; width: 33.3%;}
 }
@@ -235,31 +241,31 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
   img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 330px; object-fit: cover; object-position:center;width:33.3%;}
   .card--gradient__p{font-size: 1.2em;}
 }
-/* Article Smartphone L */
+/* Card Smartphone L */
 @media screen and (max-width: 767px) and (min-width: 425px){
   .main__blog{width: 100%;}
   .main__card{width: 100%;}
-  .card{height:250px;width: 100%; margin-bottom: 0px;}
+  .card{height:250px;width: 100%; margin: 0px;}
   .main__card{width:100%;}
   .main__card a{width:100%; height: 250px; margin: 0px;}
   img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 250px; object-fit: cover; object-position:center;width:100%;}
   .card--gradient__p{font-size: 1.2em;}
 }
-/* Article Smartphone M */
+/* Card Smartphone M */
 @media screen and (max-width: 424px) and (min-width: 375px){
   .main__blog{width: 100%;}
   .main__card{width: 100%;}
-  .card{height:250px;width: 100%; margin-bottom: 0px;}
+  .card{height:250px;width: 100%; margin 0px;}
   .main__card{width:100%;}
   .main__card a{width:100%; height: 250px; margin: 0px;}
   img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 250px; object-fit: cover; object-position:center;width:100%;}
   .card--gradient__p{font-size: 1.2em;}
 }
-/* Article Smartphone S */
+/* Card Smartphone S */
 @media screen and (max-width: 374px) and (min-width: 320px){
   .main__blog{width: 100%;}
   .main__card{width: 100%;}
-  .card{height:200px;width: 100%; margin-bottom: 0px;}
+  .card{height:200px;width: 100%; margin:0px;}
   .main__card{width:100%;}
   .main__card a{width:100%; height: 200px; margin: 0px;}
   img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 200px; object-fit: cover; object-position:center;width:100%;}
@@ -410,7 +416,7 @@ input[type="radio"]{
 .shop--title{width:100%; margin: 20px; font-size: 26px;}
 
 /* Card shop */
-.card__shop{width:410px; height:458px; margin: 10px; display: flex; justify-content: space-between;}
+.card__shop{width:410px; height:458px; margin: 10px; display: flex; justify-content: space-between; border:2px solid #EDEDED;}
 .card__image{width:270px; overflow: hidden; position: relative; }
 .card__img--custom{object-fit: cover;width:100%;height:100%; object-position: center center; }
 .card__primary{position: absolute; bottom:0px; display: flex;  width:100%; margin: auto; justify-content: space-between; padding: 10px 0px;}

@@ -23,7 +23,6 @@
       }
     ?>
 	</title>
-	<?php wp_head(); ?>
 </head>
 <body class="tricotix">
 	<header class="header">
@@ -43,7 +42,7 @@
 			<nav class="header__nav">
 				<ul class="item">
 					<a href="#"><li class="header__nav--item">Blog</li></a>
-					<a href="#"><li class="header__nav--item">Shop</li></a>
+					<a href="http://tricotix.local/shop/"><li class="header__nav--item">Shop</li></a>
 					<a href="#"><li class="header__nav--item">Stili</li></a>
 				</ul>
 			</nav>
