@@ -248,6 +248,10 @@ nav.nav{padding: 0px 0px 0px 10px;}
   .main__categorie ul li:nth-child(8){position: relative; top: 0px;} 
   .main__categorie ul li:nth-child(9){position: relative; top: 0px;} 
 }
+/* Categorie shop tablet */
+@media screen and (max-width: 1023px) and (min-width: 768px){
+  .main__categorie ul{display: flex; justify-content: center;}
+}
 /* Card */
 .main__box{width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;  margin: auto; margin-top: 10px;}
 .main__card{display: flex; width: 85%; justify-content: space-around; flex-wrap: wrap;}
@@ -460,6 +464,15 @@ input[type="radio"]{
 /* Card shop laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
   .main__card{width:100%;}
+}
+/* Card Tablet */
+@media screen and (max-width: 1023px) and (min-width: 768px){
+  .main__blog{width:100%;}
+  .card__shop{margin:0px; width: 32%; height: 300px;}
+  .card--side{width:40%;}
+  .card__feature--style{font-size: .8em; line-height: 25px;}
+  .card__button{width:100%; font-size: .5em; line-height: 40px;} 
+  .card__name, .card__price{font-size:1.2em;}
 }
 
 .gold{border:1px solid #FFF1C6;}
