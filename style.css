@@ -60,7 +60,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
  /* Universal */
-body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif; background: #1a1a1a;}
+body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;font-family: 'Roboto', sans-serif; background: #fafdff;}
 .box{width: 100%; margin: auto; display: flex; justify-content: space-between;}
 .hide{display: none;}
 .no-margin{margin: 0px;}
@@ -68,6 +68,7 @@ body.tricotix{margin:0px;padding:0px; font-size: 16px; box-sizing: border-box;fo
 body.tricotix a, a:active a:visited{color: #fff; text-decoration: none;}
 .visita{display: block;} 
 .item-2{display: none;}
+ul{margin:0px; padding: 0px !important;}
 
 
 /* Header */
@@ -175,10 +176,18 @@ nav.nav{padding: 0px 0px 0px 10px;}
   .nav{display: none;}
 }
 
+/* ---- Blog ---- */
+.main__blog{display: flex; flex-direction: column; width: 1800px; background: red; margin: auto;}
 
-/* Article */
-.main{ width: 100%; background: #EFEFEF; position: relative;}
-.main__box{width: 1450px; display: flex; flex-direction: row; flex-wrap: wrap; display: flex; justify-content: center;  margin: auto; margin-top: 20px;}
+
+/* Categorie */
+.main__categorie{ background: green;width: 300px; display: flex; justify-content: center;}
+.main__categorie ul{list-style:none; text-align: center;}
+.main__categorie ul li{background: #F6F7F9; border: 2px solid #EDEDED; border-radius: 3px; padding: 15px 30px; margin: 10px 0px; font-size: 1.2em; width: 100px;}
+
+/* Card */
+.main__box{width: 100%; background: pink; display: flex; flex-direction: row; flex-wrap: wrap; display: flex; justify-content: space-between;  margin: auto; margin-top: 20px;}
+.main__card{display: flex; width: 1500px; justify-content: space-around; flex-wrap: wrap;}
 .main__box.content{max-width: 1302px; margin: 0px auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .main__box p.category{width: 100%;}
 .main__content{max-width: 800px; margin: 0 auto;}
@@ -186,6 +195,8 @@ nav.nav{padding: 0px 0px 0px 10px;}
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 400px; object-fit: cover; object-position:center;}
 .main__article--gradient{position: absolute;  width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); bottom:0; display: flex; justify-content: center; align-items: flex-end;}
 .main__article--gradient__p{color: #fff; font-size: 21px; padding: 0px 10px;}
+
+
 /* Article Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
   .main__box{width: 99%;}
@@ -246,7 +257,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%;
 }
 
 /* Pagination */
-.main__pagination{display: flex; justify-content: center; margin-bottom: 60px;}
+.main__pagination{display: flex; justify-content: center; margin: 60px 0px; width: 100%;}
 .main__pagination span{background: #232D39; margin: auto; padding: 20px 30px; border-radius: 2px; color: #EFEFEF; font-size: 1.4em;}
 /* Pagination Tablet */
 /* Pagination Smartphone L */
@@ -366,8 +377,6 @@ input[type="radio"]{
 
 
 /* SHOP */
-
-.main__box{width:1350px; justify-content: space-between;}
 
 .shop--title{width:100%; margin: 20px; font-size: 26px;}
 
