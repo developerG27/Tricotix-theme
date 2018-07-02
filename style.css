@@ -191,19 +191,17 @@ nav.nav{padding: 0px 0px 0px 10px;}
 .main__box{width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;  margin: auto; margin-top: 20px;}
 .main__card{display: flex; width: 85%; justify-content: space-around; flex-wrap: wrap;}
 .main__content{max-width: 800px; margin: 0 auto;}
-.main__card a{width: 22%;}
-.card{position: relative; min-width: 22%; height: 450px; display: flex; overflow: hidden; margin:10px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);}
-img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 450px; object-fit: cover; object-position:center;width:22%;}
+.main__card a{width: 25%; margin-bottom: 20px;}
+.card{position: relative; min-width: 25%; height: 450px; display: flex; overflow: hidden; margin:10px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);}
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 450px; object-fit: cover; object-position:center;width:22.5%;}
 .card--gradient{position: absolute;  width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); bottom:0; display: flex; justify-content: center; align-items: flex-end;}
 .card--gradient__p{color: #fff; font-size: 21px; padding: 0px 10px;}
-
-
-
-/* Article Laptop */
+/* Card Laptop */
 @media screen and (max-width: 1440px) and (min-width: 1024px){
-  .main__box{width: 99%;}
-  .main__article{width:280px; height:350px;}
-  .main__article .attachment-post-thumbnail{ width: 230px; height: 330px;}
+  .main__blog{width: 100%;}
+  .card{height:380px; margin-bottom: 20px;}
+  .main__card a{width:25%; height: 380px;}
+  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 380px; object-fit: cover; object-position:center;width:22.5%;}
 }
 /* Article Tablet */
 @media screen and (max-width: 1023px) and (min-width: 768px){
