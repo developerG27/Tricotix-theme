@@ -17,10 +17,10 @@ get_header();
 				<main class="main__card">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<a class="no-margin" href="<?php the_permalink(); ?>">
-					<article <?php post_class('main__article'); ?>>
+					<article <?php post_class('card'); ?>>
 						<?php if( has_post_thumbnail()) { the_post_thumbnail();} ?>
-						<div class="main__article--gradient">
-							<p class="main__article--gradient__p"><?php the_title(); ?></p>
+						<div class="card--gradient">
+							<p class="card--gradient__p"><?php the_title(); ?></p>
 						</div>
 					</article>
 					</a>

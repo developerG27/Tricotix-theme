@@ -177,24 +177,25 @@ nav.nav{padding: 0px 0px 0px 10px;}
 }
 
 /* ---- Blog ---- */
-.main__blog{display: flex; flex-direction: column; width: 1800px; background: red; margin: auto;}
-
+.main__blog{display: flex; flex-direction: column; width: 1800px; margin: auto;}
 
 /* Categorie */
-.main__categorie{ background: green;width: 300px; display: flex; justify-content: center;}
-.main__categorie ul{list-style:none; text-align: center;}
-.main__categorie ul li{background: #F6F7F9; border: 2px solid #EDEDED; border-radius: 3px; padding: 15px 30px; margin: 10px 0px; font-size: 1.2em; width: 100px;}
+.main__categorie{width: 200px; display: flex; justify-content: center;}
+.main__categorie ul{list-style:none; text-align: center; }
+.main__categorie ul li{background: #F6F7F9; border: 2px solid #EDEDED; border-radius: 3px; padding: 15px 40px; margin: 10px 0px; font-size: 1.2em; width: 100px;}
+.main__categorie ul li:nth-child(1){position: sticky; top: 100px;} 
+.main__categorie ul li:nth-child(2){position: sticky; top: 170px;}
+.main__categorie ul li:nth-child(3){position: sticky; top: 240px;} 
 
 /* Card */
-.main__box{width: 100%; background: pink; display: flex; flex-direction: row; flex-wrap: wrap; display: flex; justify-content: space-between;  margin: auto; margin-top: 20px;}
-.main__card{display: flex; width: 1500px; justify-content: space-around; flex-wrap: wrap;}
-.main__box.content{max-width: 1302px; margin: 0px auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
-.main__box p.category{width: 100%;}
+.main__box{width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;  margin: auto; margin-top: 20px;}
+.main__card{display: flex; width: 1600px; justify-content: space-around; flex-wrap: wrap;}
 .main__content{max-width: 800px; margin: 0 auto;}
-.main__article{position: relative; width: 340px; display: flex; overflow: hidden; margin:10px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);}
-img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 400px; object-fit: cover; object-position:center;}
-.main__article--gradient{position: absolute;  width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); bottom:0; display: flex; justify-content: center; align-items: flex-end;}
-.main__article--gradient__p{color: #fff; font-size: 21px; padding: 0px 10px;}
+.card{position: relative; width: 380px; height: 450px; display: flex; overflow: hidden; margin:10px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);}
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{min-width: 100%; height: 450px; object-fit: cover; object-position:center;}
+.card--gradient{position: absolute;  width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)); bottom:0; display: flex; justify-content: center; align-items: flex-end;}
+.card--gradient__p{color: #fff; font-size: 21px; padding: 0px 10px;}
+
 
 
 /* Article Laptop */
