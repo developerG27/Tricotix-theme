@@ -252,6 +252,26 @@ nav.nav{padding: 0px 0px 0px 10px;}
 @media screen and (max-width: 1023px) and (min-width: 768px){
   .main__categorie ul{display: flex; justify-content: center;}
 }
+/* Categorie Smartphone L */
+@media screen and (max-width: 767px) and (min-width: 425px){
+  .main__categorie{width:100%; flex-direction: row;}
+  .main__categorie ul{display:flex; flex-direction:row; flex-wrap:wrap;} 
+  .main__categorie ul li{margin: 10px; padding: 5px 2px;font-size: 1.3em;}
+  .main__categorie ul li:nth-child(1){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(2){position: relative; top: 0px;}
+  .main__categorie ul li:nth-child(3){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(4){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(5){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(6){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(7){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(8){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(9){position: relative; top: 0px;} 
+}
+
+
+
+
+
 /* Card */
 .main__box{width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;  margin: auto; margin-top: 10px;}
 .main__card{display: flex; width: 85%; justify-content: space-around; flex-wrap: wrap;}
