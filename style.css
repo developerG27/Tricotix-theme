@@ -176,6 +176,8 @@ nav.nav{padding: 0px 0px 0px 10px;}
   .nav{display: none;}
 }
 
+
+
 /* ---- Blog ---- */
 .main__blog{display: flex; flex-direction: column; width: 95%; margin: auto;}
 
@@ -217,6 +219,35 @@ nav.nav{padding: 0px 0px 0px 10px;}
   .main__categorie ul li{margin: 0px 5px; padding: 5px 5px; width: 33.3%;}
 }
 
+/* Categorie Shop */
+@media screen and (max-width: 1023px) and (min-width: 768px){
+  .main__categorie ul{flex-wrap:wrap;} 
+  .main__categorie ul li{margin-bottom: 10px;}
+  .main__categorie ul li:nth-child(1){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(2){position: relative; top: 0px;}
+  .main__categorie ul li:nth-child(3){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(4){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(5){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(6){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(7){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(8){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(9){position: relative; top: 0px;} 
+}
+/* Categorie Shop laptop*/
+@media screen and (max-width: 1440px) and (min-width: 1024px){
+  .main__categorie{width:100%; flex-direction: row;}
+  .main__categorie ul{display:flex; flex-direction:row; flex-wrap:wrap;} 
+  .main__categorie ul li{margin: 8px; padding: 10px 2px;}
+  .main__categorie ul li:nth-child(1){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(2){position: relative; top: 0px;}
+  .main__categorie ul li:nth-child(3){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(4){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(5){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(6){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(7){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(8){position: relative; top: 0px;} 
+  .main__categorie ul li:nth-child(9){position: relative; top: 0px;} 
+}
 /* Card */
 .main__box{width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;  margin: auto; margin-top: 10px;}
 .main__card{display: flex; width: 85%; justify-content: space-around; flex-wrap: wrap;}
@@ -416,7 +447,7 @@ input[type="radio"]{
 .shop--title{width:100%; margin: 20px; font-size: 26px;}
 
 /* Card shop */
-.card__shop{width:410px; height:458px; margin: 10px; display: flex; justify-content: space-between; border:2px solid #EDEDED;}
+.card__shop{width:30.5%; height:458px; margin: 10px; display: flex; justify-content: space-between; border:2px solid #EDEDED;}
 .card__image{width:270px; overflow: hidden; position: relative; }
 .card__img--custom{object-fit: cover;width:100%;height:100%; object-position: center center; }
 .card__primary{position: absolute; bottom:0px; display: flex;  width:100%; margin: auto; justify-content: space-between; padding: 10px 0px;}
@@ -426,6 +457,10 @@ input[type="radio"]{
 .card__feature--style{ margin: 4px auto; width:94%; line-height:50px; text-align: center; background: #FFFFFF; border-radius: .25rem;}
 .card__feature--style:hover{background:#f2f2f2}
 .card__button{width: 140px;background: #5DBDE5;text-align: center;line-height:50px; color:#fff; font-size:22px;}
+/* Card shop laptop */
+@media screen and (max-width: 1440px) and (min-width: 1024px){
+  .main__card{width:100%;}
+}
 
 .gold{border:1px solid #FFF1C6;}
 .bronze{border:1px solid #FFC581;}
